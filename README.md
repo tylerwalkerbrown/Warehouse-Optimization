@@ -69,17 +69,18 @@ Winter Rye        female    34.800409
                   
                   
 With this data I wanted to test to see if these is any major difference between the habits of the shoppers we get to the store. For this I did a chi2 test where I tested the items purchased and gender to see if there was a difference. The first test I conducted was of the whole sample which gave me these results: 
-**Chi-squared test statistic = 125.14
-P-value = 0.00000000
-Degrees of freedom = 20
-There is sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is significant.**
+
+- Chi-squared test statistic = 125.14
+- P-value = 0.00000000
+- Degrees of freedom = 20
+- There is sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is significant.
 
 After I saw that I then retested using an even amount of males and females in a random sample. This came back with the results I exceptec where there is no real disparity between the two groups. 
 
-Chi-squared test statistic = 5.24
-P-value = 0.3870
-Degrees of freedom = 5
-There is not sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is not significant.
+- Chi-squared test statistic = 5.24
+- P-value = 0.3870
+- Degrees of freedom = 5
+- There is not sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is not significant.
 
 
 ## Linear Regression
