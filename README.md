@@ -25,3 +25,65 @@ With the centroids established I had to obtain the locations of the Amazon wareh
 - Hypothesis Chi2
 - Residual Analysis
 - Simple Linear
+
+# Summary Stats
+
+First thing we did we create a table of descriptive statistics that give us the insights of what type of earners are buying our products. To collect the data for the suspected income I used zillows api to loop through the addresses to append a dictionary created in python. Below you can see the table that may be a little inconsistent but serves a general purpose. Winter rye was spotted first as the highest abount sold as we saw in the map. The other thing that was nmothiced was the low earners for the tapping category.
+
+![Screen Shot 2023-02-25 at 10 14 37 PM](https://user-images.githubusercontent.com/94020684/221390327-39618074-4666-4ba6-af24-ea417b9d8f13.png)
+
+Here is a plot of the population densities broken up into deciles and arranged by male and female. This was interesting because we found opposite distributions. For men we found that most purchases are done in the urban area where for females they tend to have a higher rate pruchasing in rural or suburban areas.
+
+![image](https://user-images.githubusercontent.com/94020684/221390436-b47958f8-72f4-467f-9cf7-0cd410b85606.png)
+
+Now looking at the distribution of incomes between females and males. You can notice that there is a spike down around $50k for men causing the mean income to be lower for men versus females have a higher density higher. Females seem to contain higher density outliers in the data which is also causing the males average to be lower than females. You can also notice how there is a very large amount of men compared to the woman amoungst the customers. 
+
+![image](https://user-images.githubusercontent.com/94020684/221390467-50ed33de-8060-4332-a708-d0d06a7db43a.png)
+
+Bar plot of men vs women.
+
+![image](https://user-images.githubusercontent.com/94020684/221390519-08bc90d7-3bc0-494c-ae6f-d0e7c299690b.png)
+
+## Buying Habits
+Females purchase bulbs at almost 5 times the rate than men do and corn gluten three times as much. Most of the categories are < 2% with the biggest sellers being winter rye (accounts for around 71% of units sold) and greensand around 13%.
+
+quantity
+item              gender
+20-20-20          male       0.102354
+Alfalfa           female     0.204708
+Aluminum Sulfate  male       0.511771
+Buckwheat         female     0.102354
+                  male       0.102354
+Corn Gluten       female     2.456499
+                  male       0.307062
+Flower Bulbs      female     2.354145
+                  male       0.716479
+Greensand         female     7.778915
+                  male       5.936540
+Oyster Shell      female     0.511771
+                  male       2.149437
+Tapping           female     0.716479
+                  male       4.196520
+Winter Rye        female    34.800409
+                  male      37.052201
+                  
+                  
+With this data I wanted to test to see if these is any major difference between the habits of the shoppers we get to the store. For this I did a chi2 test where I tested the items purchased and gender to see if there was a difference. The first test I conducted was of the whole sample which gave me these results: 
+**Chi-squared test statistic = 125.14
+P-value = 0.00000000
+Degrees of freedom = 20
+There is sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is significant.**
+
+After I saw that I then retested using an even amount of males and females in a random sample. This came back with the results I exceptec where there is no real disparity between the two groups. 
+
+Chi-squared test statistic = 5.24
+P-value = 0.3870
+Degrees of freedom = 5
+There is not sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is not significant.
+
+
+## Linear Regression
+
+Here I did some simple linear regression testing the suspected income against the amount spent in the store. The correlation wasnt present plotting so I did not dive deeper into this task for the time.
+
+![image](https://user-images.githubusercontent.com/94020684/221390666-3ff23667-f4a2-4130-b13d-d190512ccfd9.png)
