@@ -82,9 +82,3 @@ After I saw that I then retested using an even amount of males and females in a 
 - Degrees of freedom = 5
 - There is not sufficient evidence to reject the null hypothesis at the 95.0% confidence level.The association between Gender and Item Purchased is not significant.
 
-
-## Linear Regression
-
-Here I did some simple linear regression testing the suspected income against the amount spent in the store. The correlation wasnt present plotting so I did not dive deeper into this task for the time.
-
-![image](https://user-images.githubusercontent.com/94020684/221390666-3ff23667-f4a2-4130-b13d-d190512ccfd9.png)
